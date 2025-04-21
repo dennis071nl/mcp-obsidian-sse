@@ -1,0 +1,9 @@
+.venv/
+.env
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
