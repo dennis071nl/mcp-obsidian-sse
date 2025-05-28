@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dennis071nl/mcp-obsidian-sse:latest
+    ports:
+      - "8001:8000"
+    restart: unless-stopped
+    networks:
+      - mcp-net
+
+networks:
+  mcp-net:
+    driver: bridge
