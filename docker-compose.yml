@@ -9,7 +9,7 @@ services:
       - "8001:8000"
     restart: unless-stopped
     environment: 
-      - OBSIDIAN_API_KEY: b90bb980f05b4f948d7c92fa331b603f759f433e2aa446a29afccc9c53ed5a3d
+      - OBSIDIAN_API_KEY=b90bb980f05b4f948d7c92fa331b603f759f433e2aa446a29afccc9c53ed5a3d
     networks:
       - mcp-net
 
